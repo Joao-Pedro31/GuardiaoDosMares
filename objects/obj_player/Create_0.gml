@@ -90,7 +90,7 @@ function input_player()
 		{
 			velv = forca_pulo;
 			qtd_pulos--;
-			audio_play_sound(snd_cartoon_jump, 2, false);
+			obj_SoundManager.tocarSfx(snd_cartoon_jump);
 		}
 	}
 	else
@@ -100,7 +100,7 @@ function input_player()
 			qtd_pulos = 1;
 			velv = forca_pulo;
 			qtd_pulos--;
-			audio_play_sound(snd_cartoon_jump, 2, false);
+			obj_SoundManager.tocarSfx(snd_cartoon_jump);
 		}
 		velv += gravidade;
 		
@@ -113,7 +113,7 @@ function input_player()
 			{
 			velv = forca_pulo;
 			velh = (10 * _xDirection)*-1;
-			audio_play_sound(snd_cartoon_jump, 2, false);
+			obj_SoundManager.tocarSfx(snd_cartoon_jump);
 			}
 		}
 	}

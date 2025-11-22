@@ -1,5 +1,5 @@
 acao = function ()
 {
-	room_goto(Tela_Inicial);
+	transicao_simples(Tela_Inicial);
 
 }

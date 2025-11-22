@@ -1,4 +1,4 @@
-sp/// @description Inserir descrição aqui
+/// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
 //draw_sprite(spr_li, 0, 20,20);
@@ -27,7 +27,27 @@ if (mensagem_feedback != "")
     // Configurações para o texto de aviso
 	
     draw_set_font(fnt_bold);
-    draw_set_color(c_orange); // Vermelho para indicar erro
+    draw_set_color(c_red); // Vermelho para indicar erro
+    draw_set_halign(fa_center); // Alinhar pelo centro
+    
+    // Desenha o texto perto da parte de baixo da tela
+    draw_text(_pos_x, 300, mensagem_feedback); // Ajuste o "300" para onde quiser
+    
+    // Reseta as configurações para não afetar outros textos
+    draw_set_color(c_white);
+    draw_set_halign(fa_left);
+}
+if (mensagem_feedback == "Voce precisa coletar todos os lixos!!")
+{
+    // Pega o centro da tela para posicionar o texto
+    var _gui_largura = display_get_gui_width();
+
+    var _pos_x = _gui_largura / 2; // Posição X (centro)
+    
+    // Configurações para o texto de aviso
+	
+    draw_set_font(fnt_bold);
+    draw_set_color(c_white); // Vermelho para indicar erro
     draw_set_halign(fa_center); // Alinhar pelo centro
     
     // Desenha o texto perto da parte de baixo da tela

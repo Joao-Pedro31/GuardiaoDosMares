@@ -5,7 +5,7 @@
 
 
 
-if (global.lixo >= 5)
+if (!instance_exists(obj_sacola) && !instance_exists(obj_garrafa))
 {
     // CONDIÇÃO ATINGIDA: O jogador tem 5 ou mais lixos
     // Ir para a próxima fase
@@ -19,7 +19,7 @@ else
     // NÃO tem lixo suficiente
     
     // 1. Define a mensagem que o controller deve exibir
-    obj_controller.mensagem_feedback = "Você precisa coletar 5 lixos!!";
+    obj_controller.mensagem_feedback = "Você precisa coletar todos os lixos!!";
     
     // 2. Define o alarme 0 do controller para 120 "passos" (frames)
     // Se seu jogo roda a 60 FPS, 120 frames = 2 segundos

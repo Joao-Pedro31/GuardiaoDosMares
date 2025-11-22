@@ -77,7 +77,7 @@ if(_chao)
 	
 	if(!pode_cair)
 	{
-		if(!place_meeting(x+(velh*10), y+1, obj_bloco))
+		if(!place_meeting(x+(velh*6), y+1, obj_bloco))
 		{
 			velh *= -1;
 		}

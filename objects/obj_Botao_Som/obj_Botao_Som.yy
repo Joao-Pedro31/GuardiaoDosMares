@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Botao_Som",
   "spriteId": {
-    "name": "spr_sem_som",
-    "path": "sprites/spr_sem_som/spr_sem_som.yy",
+    "name": "Default66",
+    "path": "sprites/Default66/Default66.yy",
   },
   "solid": false,
   "visible": true,
@@ -37,7 +37,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "UI",
+    "path": "folders/Objetos/UI.yy",
   },
 }

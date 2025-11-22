@@ -32,7 +32,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "ELEMENTS",
+    "path": "folders/Objetos/ELEMENTS.yy",
   },
 }

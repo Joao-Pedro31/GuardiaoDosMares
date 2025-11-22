@@ -1,17 +1,22 @@
-acao = function()
-{
 
-global.audio_on = !global.audio_on;
-
-if (global.audio_on)
-{
-    audio_set_master_gain(1, 0);
+acao = function() {
+	musica_flag = !musica_flag;
+	obj_SoundManager.setTocarMusica(musica_flag);
 	
-}
-else
-{
-    audio_set_master_gain(0, 0);
-}
+	
+	if (musica_flag)
+	{
+	sprite_index =Default65;
 
+	if (!audio_is_playing(snd_undersound)) {
+    obj_SoundManager.tocarMusica(snd_undersound);
+}
+		
+	}
+	else
+	{
+	audio_stop_all()
+	sprite_index = Default66;
+	}
 }
 
