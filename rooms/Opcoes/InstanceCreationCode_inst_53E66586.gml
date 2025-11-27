@@ -6,7 +6,7 @@ acao = function() {
 	
 	if (musica_flag)
 	{
-	sprite_index =Default65;
+	sprite_index =desativarSom;
 
 	if (!audio_is_playing(snd_undersound)) {
     obj_SoundManager.tocarMusica(snd_undersound);
@@ -16,7 +16,7 @@ acao = function() {
 	else
 	{
 	audio_stop_all()
-	sprite_index = Default66;
+	sprite_index = ativarSom;
 	}
 }
 

@@ -7,6 +7,7 @@ event_inherited();
 
 velocidade = 5;
 gravidade = .3;
+vida = 3;
 
 forca_pulo = -7;
 
@@ -120,10 +121,14 @@ function input_player()
 	velh = lerp(velh, _velh, .1);
 }
 
+if(vida <= 0){
+	room_restart();	
+}
+
 if (MOBILE){
 	
-	virtual_key_add(20,650, 100, 100, ord("A"));
-	virtual_key_add(380,650, 100, 100, ord("D"));
-	virtual_key_add(1200,640, 100, 100, vk_space);
+	virtual_key_add(20,650, 150, 100, ord("A"));
+	virtual_key_add(380,650, 150, 100, ord("D"));
+	virtual_key_add(1200,640, 150, 100, vk_space);
 
 }

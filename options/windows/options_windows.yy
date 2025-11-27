@@ -2,6 +2,9 @@
   "resourceType": "GMWindowsOptions",
   "resourceVersion": "1.1",
   "name": "Windows",
+  "ConfigValues": {
+    "Mobile": {"option_windows_icon":"icons/icon.ico",},
+  },
   "option_windows_display_name": "Created with GameMaker",
   "option_windows_executable_name": "${project_name}.exe",
   "option_windows_version": "1.0.0.0",

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_Botao_Som",
   "spriteId": {
-    "name": "Default66",
-    "path": "sprites/Default66/Default66.yy",
+    "name": "desativarSom",
+    "path": "sprites/desativarSom/desativarSom.yy",
   },
   "solid": false,
   "visible": true,
